@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe - AI Modes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <h1>Tic Tac Toe</h1>
+
+    <div id="player-info">
+      <input type="text" id="player-name" placeholder="Enter Player Name" />
+      <label for="game-mode">Game Mode:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+        <option value="legend">Legend</option>
+      </select>
+      <button id="start-game">Start Game</button>
+    </div>
+
+    <table id="score-table" style="display: none; margin: 20px auto; border-collapse: collapse; width: 50%;">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="player-name-display">Player</td>
+          <td id="player-score">0</td>
+        </tr>
+        <tr>
+          <td>Om Khalane</td>
+          <td id="computer-score">0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="board" id="board"></div>
+    <p id="status"></p>
+
+    <div>
+      <bottombutton id="restart" style="display: none;">Restart</bottombutton>
+      <bottombutton id="reset" style="display: none;">Reset Game</bottbutton>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
